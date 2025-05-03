@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="input-container">
+          <input type="text" class="input" placeholder="username" id="input1" onkeydown="ckeckValueUserName(event)"/>
+          <div class="error-mas" id="User-Name-error" ">
+            Usere Name shold have 12 charicter ! ...
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="text" class="input" placeholder="password" id="input2" onkeydown="ckeckValuePassword(event)" />
+          <div class="error-mas" id="Password-error">
+            Password shold have 8 charicter ! ...
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="button" onclick="buttonFunk()">Log in</button>
+          <div class="span-container">
+            <span id="first-span">Not registerrd?</span>
+            <span id="second-span"> Create an account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Alert">فرمت اطلاعات وارد شده نا معتبر است</div>
+    <script src="app.js"></script>
+  </body>
+</html>
